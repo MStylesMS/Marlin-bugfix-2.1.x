@@ -31,6 +31,11 @@
   #define MYSERIAL MYSERIAL2
 #endif
 
+//#define DWIN_CREALITY_LCD_ENHANCED      // Use Enhanced UI
+#define DWIN_LCD_PROUI               // Use Professional UI
+#define LCD_SERIAL_PORT 3               // Serial port for display
+#define LCD_BAUDRATE 115200             // Baud rate for display
+
 //===========================================================================
 //===========================================================================
 
