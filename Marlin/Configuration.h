@@ -104,7 +104,8 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-#define SERIAL_PORT 1
+#define SERIAL_PORT 1        // Default is 1 for serial box
+#define BAUDRATE 115200      // This is the default baudrate
 
 /**
  * Serial Port Baud Rate
