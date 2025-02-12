@@ -36,6 +36,7 @@
 //#define DWIN_MARLINUI_LANDSCAPE     // MarlinUI (landscape orientation)
 
 // Added since DWIN_CREALITY_LCD_ENHANCED upgraded to DWIN_LCD_PROUI
+#define BOOTSCREEN_TIMEOUT 1100
 
 //===========================================================================
 //===========================================================================
@@ -927,8 +928,8 @@
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
-  //#define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of flash)
-  //#define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash)
+  #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of flash)
+  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of flash)
 #endif
 
 // @section safety
@@ -1311,6 +1312,7 @@
 #define MANUAL_FEEDRATE { 50*60, 50*60, 4*60, 2*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
 #define FINE_MANUAL_MOVE 0.025    // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines
 
+#define BOOTSCREEN_TIMEOUT 1100
 //=============================================================================
 //=============================================================================
 //=============================================================================
@@ -3548,6 +3550,9 @@
 //#define DWIN_CREALITY_LCD_JYERSUI   // Jyers UI by Jacob Myers
 //#define DWIN_MARLINUI_PORTRAIT      // MarlinUI (portrait orientation)
 //#define DWIN_MARLINUI_LANDSCAPE     // MarlinUI (landscape orientation)
+
+// Added since DWIN_CREALITY_LCD_ENHANCED upgraded to DWIN_LCD_PROUI
+#define BOOTSCREEN_TIMEOUT 1100
 
 //
 // Touch Screen Settings
