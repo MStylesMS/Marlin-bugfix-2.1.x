@@ -2730,6 +2730,8 @@
  * you must uncomment the following option or it won't work.
  */
 #define SDSUPPORT
+#define BINARY_FILE_TRANSFER          // Enable binary transfer over serial
+#define CUSTOM_FIRMWARE_UPLOAD        // Enable custom firmware upload
 
 /**
  * SD CARD: ENABLE CRC
